@@ -1,0 +1,271 @@
+.voice-panel {
+  padding: 24px;
+  margin-bottom: 22px;
+  border: 1px solid #dce9df;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgb(25 55 37 / 3%);
+}
+
+.voice-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.voice-icon {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 13px;
+  background: #e7f5ec;
+  font-size: 23px;
+}
+
+.voice-heading h3 {
+  margin: 0;
+  font-size: 17px;
+}
+
+.voice-heading p {
+  margin: 5px 0 0;
+  color: #758078;
+  font-size: 13px;
+}
+
+.voice-status {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 22px 0 15px;
+  color: #526258;
+  font-size: 13px;
+}
+
+.voice-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #aab5ad;
+}
+
+.voice-dot.active {
+  background: #22a366;
+  box-shadow: 0 0 0 4px #e0f5e8;
+}
+
+.voice-dot.playback {
+  background: #3566b0;
+  box-shadow: 0 0 0 4px #e8eef9;
+}
+
+.voice-actions {
+  margin-bottom: 22px;
+}
+
+.voice-start,
+.voice-stop,
+.voice-process {
+  min-height: 43px;
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 9px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.voice-start,
+.voice-process {
+  background: #146b48;
+}
+
+.voice-stop {
+  background: #b83232;
+}
+
+.voice-start:disabled,
+.voice-process:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+.voice-panel label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.voice-panel textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dfe6e0;
+  border-radius: 9px;
+  resize: vertical;
+  font: inherit;
+  font-size: 13px;
+}
+
+.voice-panel textarea:focus {
+  outline: 2px solid #c5e8d2;
+  border-color: #27875b;
+}
+
+.voice-hint,
+.voice-disclosure {
+  color: #758078;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.voice-process {
+  margin-top: 8px;
+}
+
+.voice-result,
+.voice-error {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 9px;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.voice-result {
+  background: #f0faf3;
+  color: #17673c;
+}
+
+.voice-error {
+  background: #fff3f2;
+  color: #a52d25;
+}
+.transaction-confirmation {
+  margin-top: 16px;
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  background: #f9fafb;
+}
+
+.transaction-confirmation h3 {
+  margin-top: 0;
+}
+
+.transaction-confirmation p {
+  margin: 8px 0;
+}
+
+.confirmation-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.confirmation-actions button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirmation-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.pending-notice {
+  margin: 12px 0;
+  padding: 11px 13px;
+  border: 1px solid #e7d8a5;
+  border-radius: 9px;
+  background: #fff9e8;
+  color: #634e11;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.customer-choice-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 12px 0;
+}
+
+.customer-choice-list button,
+.confirm-transaction-button,
+.cancel-transaction-button {
+  min-height: 44px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 700;
+}
+
+.customer-choice-list button,
+.confirm-transaction-button {
+  border: 1px solid #146b48;
+  background: #146b48;
+  color: #fff;
+}
+
+.cancel-transaction-button {
+  border: 1px solid #9d2929;
+  background: #fff;
+  color: #8d2222;
+}
+
+.customer-choice-list button:disabled,
+.confirm-transaction-button:disabled,
+.cancel-transaction-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.voice-start:focus-visible,
+.voice-stop:focus-visible,
+.voice-process:focus-visible,
+.confirmation-actions button:focus-visible,
+.customer-choice-list button:focus-visible,
+.language-selector select:focus-visible {
+  outline: 3px solid #b9811c;
+  outline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  .voice-panel {
+    padding: 17px;
+  }
+
+  .confirmation-actions {
+    flex-direction: column;
+  }
+
+  .confirmation-actions button {
+    width: 100%;
+  }
+}
+.language-selector {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.language-selector label {
+  font-weight: 600;
+}
+
+.language-selector select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+}
